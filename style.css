@@ -1,0 +1,313 @@
+
+  * {
+    box-sizing:border-box;
+    margin: 0;
+    word-wrap: break-word;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  body {
+    height: 100%;
+    min-height: 150vh;
+    background-color:#ffff;
+  }
+
+  .header {
+    background-color: rgba(252, 133, 78, 0.916);
+    color: white;
+    height: 15vh;
+  }
+
+  .name {
+    position: relative;
+    left: 50vw;
+    width: 40vw;
+    top: 20%;
+  }
+
+  .name span:nth-child(1) {
+    font-size: 5vh;
+    word-wrap: normal;
+    font-family: cursive sans;
+  }
+
+  .name span::after {
+    content: "\a";
+    white-space: pre;
+  }
+
+  .name span:nth-child(2) {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5vh;
+    word-wrap: normal;
+  }
+
+  .row1 {
+    width: 90%;
+    height: 115vh;
+    display: grid;
+    margin: -4vh 5vh;
+    grid-template-columns: 30% 60%;
+  }
+
+  .personal_details {
+    
+    height:100%;
+    
+
+  }
+
+  .bio-data img {
+    width: 60%;
+    position: relative;
+    top: 3vh;
+    left: 0vh;
+
+  }
+
+  .bio-data {
+    
+    position: relative;
+    height:60vh;
+    color:black;
+    border-radius:150px;
+    text-align: center;
+    bottom: 3vh;
+    background-color:white;
+    box-shadow: 1px 1px 20px rgb(132, 131, 131);
+    
+  }
+  .details{
+    position: relative;
+    top: 5vh;
+  }
+
+  .question {
+    font-size: 1.8vh;
+    padding: 2px;
+    
+    color: rgb(176, 173, 173);
+  }
+
+  .answer {
+    font-size: 2.3vh;
+    padding-bottom: 9px;
+    color: black;
+  }
+
+  .skills {
+    width: 100%;
+    height:auto;
+    
+    color: black;
+    padding: 2% 4%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0);
+    margin-bottom:3vh;
+    border-radius: 10px;
+  }
+
+  .points {
+    width: 100%;
+    padding: 10px 20px;
+    word-break:normal;
+    border-radius: 50px;
+    font-size: 3vh;
+    color: white;
+    margin: 0 0 0 ;
+    background-color: rgba(252, 133, 78, 0.916);
+  }
+
+  .skills p {
+    padding: 10px 5px 10px;
+    font-size: 2.3vh;
+  }
+
+  .skills ul li {
+    margin: 5px 0 0 3vh;
+    font-size:2vh;
+  }
+
+  .interests {
+    position: absolute;
+    width: 100vw;
+    background-color: black;
+  }
+  .about{
+    margin-top:10vh;
+    margin-left:10vh;
+  }
+  .about .skills ul li, .about .skills p{
+    list-style: none;
+    font-size:2vh;
+  }
+  .man{
+    margin-top:7vh;
+  }
+  footer{
+    width:100%;
+    height:25vh;
+    background-color: rgba(252, 133, 78, 0.916);
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: end;
+    margin-top:20px;
+  }
+  footer h2{
+    color: #fff;
+    font-size:2fr;
+    margin-bottom: 2vh;
+  }
+
+  .my-profiles{
+    margin-top:2vh
+    
+  }
+  @media only screen and (min-width:1000px){
+    .bio-data{
+      border-radius: 10vh;
+    }
+    .bio-data img{
+      position: absolute;
+      left:1vw;
+      top:2vh;
+      max-width: 160px;
+    }
+    .bio-data .details{
+      position: relative;
+      left: 5vw;
+      top: 30vh;
+      
+    }
+  }
+  @media only screen and (max-width:700px){
+    .row1 {
+      width: 90%;
+      height: 115vh;
+      display: grid;
+      margin: -4vh 2vh;
+      grid-template-columns: 40% 60%;
+    }
+    .skills {
+      width: 100%;
+      height:auto;
+      
+      color: black;
+      padding: 1% 2%;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0);
+      margin-bottom:1.5vh;
+      border-radius: 10px;
+    }
+    .name span:nth-child(1) {
+      font-size: 3vh;
+      word-wrap: normal;
+      font-family: cursive sans;
+    }
+    .name span:nth-child(2) {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 1.5vh;
+      word-wrap: normal;
+    }
+  
+    .points {
+      width: 100%;
+      padding: 5px 10px;
+      word-break:normal;
+      border-radius: 25px;
+      font-size: 2vh;
+      color: white;
+      margin: 0 0 0 ;
+      background-color: rgba(252, 133, 78, 0.916);
+    }
+    footer{
+      
+      margin-top:150px;
+    }
+    footer h2{
+      color: #fff;
+      margin-bottom:2vh;
+      font-size:2fr;
+    }
+  
+    .my-profiles{
+      margin-top:2vh
+      
+    }
+    .email {
+      width: 2.5vh;
+      padding: 5px;
+      border-radius: 30%;
+      box-shadow: 0 0 10px 3px rgba(15, 236, 236, 0.89);
+      margin: 5vh 20px;
+    }
+    .linkedin {
+      width: 2vh;
+      margin-left: 5px;
+      padding: 5px;
+      border-radius: 40%;
+      box-shadow: 0 0 10px 3px rgb(238, 87, 112);
+    }
+    .github {
+      width: 2vh;
+      margin-left: 13px;
+      border-radius: 40%;
+      padding: 5px;
+      box-shadow: 0 0 10px 3px rgba(150, 49, 233, 0.699);
+    }
+    .twitter {
+      width: 2vh;
+      margin-left: 13px;
+      border-radius: 40%;
+      padding: 5px;
+      box-shadow: 0 0 10px 3px rgba(143, 243, 77, 0.801);
+    }
+  }
+  @media only screen and (max-width:1000px){
+    .bio-data{
+      max-width:200px;
+    }
+    .bio-data img{
+      max-width:160px;
+    }
+  }
+  .email {
+        width: 5vh;
+        padding: 5px;
+        border-radius: 30%;
+        box-shadow: 0 0 10px 3px rgba(15, 236, 236, 0.89);
+        margin:1.5vh 20px;
+      }
+  .email:hover {
+        background-color:rgba(15,236,236,0.89);
+      }
+  .linkedin {
+        width: 4vh;
+        margin-left: 13px;
+        padding: 5px;
+        border-radius: 40%;
+        box-shadow: 0 0 10px 3px rgb(238, 87, 112);
+      }
+  .linkedin:hover {
+        background-color: rgb(238, 87, 112);
+      }
+  .github {
+        width: 4vh;
+        margin-left: 13px;
+        border-radius: 40%;
+        padding: 5px;
+        box-shadow: 0 0 10px 3px rgba(150, 49, 233, 0.699);
+      }
+  .github:hover {
+        background-color: rgba(150, 49, 233, 0.699);
+      }
+  .twitter {
+        width: 4vh;
+        margin-left: 13px;
+        border-radius: 40%;
+        padding: 5px;
+        box-shadow: 0 0 10px 3px rgba(143, 243, 77, 0.801);
+      }
+  .twitter:hover {
+        background-color: rgba(199, 243, 77, 0.801);
+      }
