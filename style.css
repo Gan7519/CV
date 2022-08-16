@@ -46,16 +46,16 @@
   .row1 {
     width: 90%;
     height: 115vh;
+    margin-left: 2vw;
     display: grid;
-    margin: -4vh 5vh;
     grid-template-columns: 30% 60%;
   }
 
   .personal_details {
     
     height:100%;
-    
 
+    margin: -4vh 0vh;
   }
 
   .bio-data img {
@@ -103,7 +103,7 @@
     color: black;
     padding: 2% 4%;
     box-shadow: 1px 1px 5px rgba(0, 0, 0);
-    margin-bottom:3vh;
+    margin-bottom:7vh;
     border-radius: 10px;
   }
 
@@ -134,7 +134,7 @@
     background-color: black;
   }
   .about{
-    margin-top:10vh;
+    margin-top:8vh;
     margin-left:10vh;
   }
   .about .skills ul li, .about .skills p{
@@ -142,7 +142,7 @@
     font-size:2vh;
   }
   .man{
-    margin-top:7vh;
+    margin-bottom:10vh;
   }
   footer{
     width:100%;
@@ -184,10 +184,10 @@
   @media only screen and (max-width:700px){
     .row1 {
       width: 90%;
-      height: 115vh;
+      height:175vh;
       display: grid;
       margin: -4vh 2vh;
-      grid-template-columns: 40% 60%;
+      grid-template-columns:100%;
     }
     .skills {
       width: 100%;
@@ -196,7 +196,7 @@
       color: black;
       padding: 1% 2%;
       box-shadow: 1px 1px 5px rgba(0, 0, 0);
-      margin-bottom:1.5vh;
+      margin-bottom:5vh;
       border-radius: 10px;
     }
     .name span:nth-child(1) {
@@ -208,6 +208,10 @@
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 1.5vh;
       word-wrap: normal;
+    }
+    .about{
+      margin-top:0vh;
+      margin-left:0;
     }
   
     .points {
@@ -221,9 +225,9 @@
       background-color: rgba(252, 133, 78, 0.916);
     }
     footer{
-      
-      margin-top:150px;
+      margin-top:20px;
     }
+
     footer h2{
       color: #fff;
       margin-bottom:2vh;
