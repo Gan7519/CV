@@ -20,14 +20,14 @@
   }
 
   .name {
-    position: relative;
-    left: 65%;
+    position: absolute;
+    right: 5%;
     width: 30vw;
-    top: 20%;
+    top: 3%;
   }
 
   .name span:nth-child(1) {
-    font-size: 5vh;
+    font-size: 3vh;
     word-wrap: normal;
     font-family: cursive sans;
   }
@@ -48,14 +48,14 @@
     height: 115vh;
     margin-left: 2vw;
     display: grid;
-    grid-template-columns: 30% 60%;
+    grid-template-columns: 40% 50%;
   }
 
   .personal_details {
     
     height:100%;
-
-    margin: -4vh 0vh;
+    width: 100%;
+    margin: -4vh 1vh;
   }
 
   .bio-data img {
@@ -71,6 +71,7 @@
     position: relative;
     height:60vh;
     color:black;
+    width: 100%;
     border-radius:150px;
     text-align: center;
     bottom: 3vh;
@@ -249,6 +250,7 @@
       width: 2vh;
       margin-left: 5px;
       padding: 5px;
+      margin-bottom: 10px;
       border-radius: 40%;
       box-shadow: 0 0 10px 3px rgb(238, 87, 112);
     }
@@ -256,12 +258,14 @@
       width: 2vh;
       margin-left: 13px;
       border-radius: 40%;
+      margin-bottom: 10px;
       padding: 5px;
       box-shadow: 0 0 10px 3px rgba(150, 49, 233, 0.699);
     }
     .twitter {
       width: 2vh;
       margin-left: 13px;
+      margin-bottom: 10px;
       border-radius: 40%;
       padding: 5px;
       box-shadow: 0 0 10px 3px rgba(143, 243, 77, 0.801);
@@ -269,7 +273,7 @@
   }
   @media only screen and (max-width:1000px){
     .bio-data{
-      max-width:200px;
+      max-width:50vw;
     }
     .bio-data img{
       max-width:160px;
